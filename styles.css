@@ -1,0 +1,113 @@
+/* Estilos generales */
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #f8f3f3;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003333;
+    padding: 15px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons .btn-login, .auth-buttons .btn-register {
+    background-color: #fff;
+    border: none;
+    padding: 15px 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-buttons .btn-register {
+    background-color: #1a6f8b;
+    color: #fff;
+}
+
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #797979;
+    padding: 70px;
+    text-align: left;
+}
+
+.banner-content h2 {
+    color: #f4f0f0;
+    font-size: 2.0em;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background-color: #003333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #003333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-content p {
+    margin: 20px 2;
+}
+
+.social-icons img {
+    width: 25px;
+    margin: 2 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+    color: #ede9e9;
+}
+
+
+body, p, a, li, label {
+    font-family: 'Merriweather', serif;
+    font-weight: bold; 
+    color: #fff8f8;
+}
+.ImagenContador { 
+    margin-top: 20px; /* Mueve hacia abajo */
+    margin-left: 200px; /* Mueve hacia la derecha */
+    width: 200px;
+    height: auto;
+}
