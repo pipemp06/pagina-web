@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        /* Estilos generales */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0c2d3e;
+            color: #ddd;
+        }
+
+        /* Contenedor principal */
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #0c2d3e;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        /* Imagen de encabezado */
+        .header-image {
+            text-align: center;
+            display: block;
+            border-radius: 20px;
+            width: 75%;
+             margin-bottom: 15px;
+            height: auto;
+            margin: auto;
+
+        }
+
+        /* Estilos de entrada de texto */
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 20px;
+            background-color: #fffbfb;
+            color: #fff;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        /* Botón de Google */
+        .google-login {
+            justify-content: center;
+            width: 80%;
+            padding: 10px;
+            margin:auto;
+            border-radius: 20px;
+            background-color: #ccc;
+            color: #333;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        /* Texto de enlace */
+        .register-link {
+            margin-top: 10px;
+            color: #ccc;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Botón de registro */
+        .register-button {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #6e6e6e;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="header-image">
+            <img src="ing logo.jpg" alt="Encabezado" width="50%">
+        </div>
+        
+        <input type="text" placeholder="Usuario" required>
+        <input type="password" placeholder="Contraseña" required>
+
+        <div class="google-login">
+            <img src="google.png" alt="Google logo" width="20" style="margin-right: 8px;">
+            continuar con Google
+        </div>
+
+        <p>¿No tienes cuenta?</p>
+         <a class="btn-register" href="registrar.html"> regsitrase<a>
+ 
+        
+    </div>
+</body>
+</html>

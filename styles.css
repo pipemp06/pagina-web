@@ -37,7 +37,7 @@ body {
 }
 
 .auth-buttons .btn-login, .auth-buttons .btn-register {
-    background-color: #fff;
+    background-color: #1a6f8b;
     border: none;
     padding: 15px 20px;
     margin-left: 8px;
@@ -111,3 +111,4 @@ body, p, a, li, label {
     width: 200px;
     height: auto;
 }
+

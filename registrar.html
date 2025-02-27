@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #0A3A44; /* Color de fondo de la página */
+}
+
+.registro-container {
+    background-color: #022B31;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #E0E0E0;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.titulo {
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.formulario {
+    display: grid;
+    gap: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.campo label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo select {
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #E0E0E0;
+    color: #333;
+}
+
+.boton-registrar {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #056A73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-registrar:hover {
+    background-color: #044E5A;
+}
+
+   </style>
+</head>
+<body>
+    <div class="registro-container">
+        <div class="logo">
+            <!-- Aquí podrías insertar una imagen de logo -->
+            <img src="ing logo.jpg" alt="Logo" />
+        </div>
+        <h2 class="titulo">DATOS DE REGISTRO</h2>
+        <form class="formulario">
+            <div class="campo">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres">
+            </div>
+            <div class="campo">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </div>
+            <div class="campo">
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <div class="campo">
+                <label for="tipo_documento">Tipo de documento</label>
+                <select id="tipo_documento" name="tipo_documento">
+                    <option value="cc">Cédula de ciudadanía</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="ce">Cédula de extranjería</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="numero_documento">N. documento</label>
+                <input type="text" id="numero_documento" name="numero_documento">
+            </div>
+            <div class="campo">
+                <label for="numero_celular">Número de celular</label>
+                <input type="tel" id="numero_celular" name="numero_celular">
+            </div>
+            <button type="submit" class="boton-registrar">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
