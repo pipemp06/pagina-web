@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        /* Estilos simplificados */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0A3A44;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .registro-container {
+            background-color: #022B31;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            color: #E0E0E0;
+        }
+
+        .formulario {
+            display: grid;
+            gap: 10px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .campo label {
+            font-size: 0.9em;
+        }
+
+        .campo input,
+        .campo select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #E0E0E0;
+            color: #333;
+        }
+
+        .boton-registrar {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #056A73;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .boton-registrar:hover {
+            background-color: #044E5A;
+        }
+    </style>
+</head>
+<body>
+    <div class="registro-container">
+        <h2 class="titulo">DATOS DE REGISTRO</h2>
+        <form  method="POST" action="registro.php">
+            <div class="campo">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </div>
+            <div class="campo">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="campo">
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <div class="campo">
+                <label for="tipo_documento">Tipo de documento</label>
+                <select id="tipo_documento" name="tipo_documento" required>
+                    <option value="cc">Cédula de ciudadanía</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="ce">Cédula de extranjería</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="numero_documento">N. documento</label>
+                <input type="text" id="numero_documento" name="numero_documento" required>
+            </div>
+            <div class="campo">
+                <label for="numero_celular">Número de celular</label>
+                <input type="tel" id="numero_celular" name="numero_celular" required>
+            </div>
+            <a class="btn-continuar" href="nuevo_usuario.html">Registrarse</a>
+        </form>
+    </div>
+</body>
+</html>
